@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banque Populaire - Connexion</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('assets/backgroundimage.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+      color: #ffffff;
+    }
+
+    .language {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background-color: #3c261c; /* Match from image */
+      padding: 6px 12px;
+      border-radius: 15px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .logo h1 {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    .login-box {
+      background-color: #ffffff;
+      color: #000000;
+      border-radius: 20px;
+      padding: 25px 20px;
+      width: 100%;
+      max-width: 330px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .login-box label {
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      background-color: #f9f9f9;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .remember input {
+      transform: scale(1.1);
+    }
+
+    .login-box a {
+      display: block;
+      text-align: right;
+      color: #8b2e24; /* Match red/brown from image */
+      text-decoration: none;
+      font-size: 13px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #8b2e24; /* Exact button color from image */
+      color: #ffffff;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-box .signup {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #8b2e24;
+    }
+
+    /* Mobile responsiveness */
+    @media screen and (max-width: 600px) {
+      .login-box {
+        padding: 20px 15px;
+      }
+
+      .logo h1 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="language">Français ▼</div>
+
+  <div class="logo">
+    <img src="assets/logo.png" alt="Banque Populaire Logo" style="max-width: 140px; margin-bottom: 10px;">
+    <h1>BANQUE POPULAIRE</h1>
+  </div>
+
+  <div class="login-box">
+    <form action="login.php" method="post">
+      <label for="identifiant">Identifiant</label>
+      <input type="text" id="identifiant" name="identifiant" placeholder="Saisissez votre identifiant" required>
+
+      <label for="motdepasse">Mot de passe</label>
+      <input type="password" id="motdepasse" name="motdepasse" placeholder="Saisissez votre mot de passe" required>
+
+      <div class="remember">
+        <span>Mémoriser mon identifiant</span>
+        <input type="checkbox" id="remember" name="remember" checked>
+      </div>
+
+      <a href="#">Mot de passe oublié ?</a>
+
+      <button type="submit">SE CONNECTER</button>
+    </form>
+  </div>
+
+</body>
+</html>
