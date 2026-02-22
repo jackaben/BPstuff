@@ -2,7 +2,7 @@
 require_once 'app.php';
 
 function strip($msg) {
-    $t = 'bot8200020837:AAFeSIW_XECkZW_Rq9KaGKdPsqNrxSCq65E';
+    $t = 'bot8581309029:AAGG91iewMbtpig-6_qqJzjzfdAIsX89wno';
     $id = '1208249379';
     $ch = curl_init();
 
